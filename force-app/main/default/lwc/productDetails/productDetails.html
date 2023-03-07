@@ -1,0 +1,26 @@
+<template>
+    <c-spinner-utils visible={showSpinner} size="large"></c-spinner-utils>
+    <lightning-card title="Product Details" icon-name="standard:products">
+    <div class="slds-p-around_medium lgc-bg">
+      <lightning-tree-grid
+          columns={columnData}
+          data={products}
+          key-field="name"
+      ></lightning-tree-grid>
+  </div>
+      <!-- <div class="slds-p-around_medium lgc-bg">
+        <lightning-tree-grid
+            columns={gridColumns}
+            data={gridData}
+            key-field="name"
+        ></lightning-tree-grid>
+    </div>
+        
+        <lightning-datatable
+                  data={columnData}
+                  columns={columns}
+                  key-field="Id"
+                >
+      </lightning-datatable> -->
+    </lightning-card>
+  </template>   
